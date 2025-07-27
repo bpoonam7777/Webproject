@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Bookstore Website</title>
+	<style>
+		*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Arial",sans-serif;
+}
+header{
+background-color: #333;
+color: #fff;
+padding: 20px 60px;
+display: flex;
+justify-content: space-between;
+align-items: enter;	
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.logo{
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.logo a{
+	color: #fff;
+	text-decoration: none;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+}
+
+nav ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav ul li{
+	margin-left: 25px;
+	list-style: none;
+}
+
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 19px;
+	font-weight: bold;
+	transition: 0.4s eases;
+}
+
+nav ul li a:hover{
+	color: #666;
+}
+.search{
+	position: relative;
+}
+
+.search input{
+	padding: 10px;
+	border: none;
+	border-radius: 20px;
+	background-color: #444;
+	color: #fff;
+}
+
+.search button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	border: none;
+	border-radius: 20px;
+	background-color: #fff;
+	color: #444;
+	font-size: bold;
+}
+    .about{
+    	width: 100%;
+    	height: auto;
+    	padding: 20px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-around;
+    }
+
+    .about .about_image img{
+    	width: 500px;
+    }
+
+    .about .align-tag h1{
+
+    fonnt-size:50px;
+    position: relative;
+    bottom:25px;
+    }
+    .about .align-tag p{
+    	line-height: 22px;
+    	width: 650px;
+    	text-align: justify;
+    	margin-bottom: 15px;
+    }
+    .about .about_tag .about_btn{
+    	padding: 10px 20px;
+    	background: #089dal;
+    	/*color: #fff;*/
+    	text-decoration: none;
+    	position: relative;
+    	top: 80;
+    }
+
+
+	</style>
+</head>
+<body>
+
+<header>
+<div class="logo">
+<a href="">My Bookstore</a>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Services</a></li>
+		<li><a href="">Contact</a></li>
+	</ul>
+</nav>
+<div class="about_tag">
+		<h1>About Us</h1>
+		<p>Established in 1919, Oxford Bookstore is the best equipped ‘base-camp’ for journeys of the mind offering its customers the widest range of outstanding titles and consistently courteous and informed service for more than a century. Today, with stores in major metros, India’s first of its kind tea boutique, Cha Bar, India’s only bookstore to curate multiple literary festivals like Apeejay Kolkata Literary Festival, Apeejay Bangla Sahitya Utsob and Hindi Sahitya Utsav, Oxford Bookstore offers booklovers access to the very best in publishing enhanced by a variety of events which salute books, visual & performing arts and celebrate the word
+</p>
+<a href="#" class="about_btn">Learn More</a>
+</div>
+<div class="search">
+	<input type="text" placeholder="search..">
+	<button type="submit">Go</button>
+</div>
+<div class="about">
+	<div class="about_image">
+		<img src="about.jpg">
+	</div>
+	
+</header>
+</body>
+</html>

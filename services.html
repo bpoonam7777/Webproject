@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Bookstore</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Arial", sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .logo a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: bold;
+      transition: 0.4s ease;
+    }
+
+    nav ul li a:hover {
+      color: #666;
+    }
+
+    .search {
+      position: relative;
+    }
+
+    .search input {
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #444;
+      color: #fff;
+    }
+
+    .search button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #fff;
+      color: #444;
+      font-weight: bold;
+    }
+
+    main {
+        background-color: hsl(196.3,30.9%,74.2%);
+
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 40px 0 20px;
+    }
+
+    .image-container,
+    .image-container1,
+    .image-container2 {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .image-container img,
+    .image-container1 img,
+    .image-container2 img {
+      height: 200px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="#">My Bookstore</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="new.html">Home</a></li>
+        <li><a href="about1.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact 1.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Go</button>
+    </div>
+  </header>
+
+  <main>
+    <h2><i>Trending Books</i></h2> 
+  <br>
+    <div class="image-container">
+      <img src="1.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="2.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="3.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="4.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="5.jpg" align="left" height="200px" style="margin-right:25px;">          
+    </div>
+  <h2><i>Classic Books</i></h2>
+  <br>  
+    <div class="image-container1">
+      <img src="11.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="22.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="33.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="44.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="55.jpg" align="left" height="200px" style="margin-right:25px;"> 
+    </div>
+  <h2><i>Thrillers</i></h2>
+  <br>
+    <div class="image-container2">
+      <img src="111.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="222.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="333.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="444.jpg" align="left" height="200px" style="margin-right:25px;">
+      <img src="555.jpg" align="left" height="200px" style="margin-right:25px;">
+    </div>
+  </main>
+
+</body>
+</html>

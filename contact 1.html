@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Arial", sans-serif;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px 60px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: sticky;
+			top: 0;
+			z-index: 100;
+		}
+
+		.logo {
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.logo a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+		}
+
+		nav ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		nav ul li {
+			margin-left: 25px;
+			list-style: none;
+		}
+
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 19px;
+			font-weight: bold;
+			transition: 0.4s ease;
+		}
+
+		nav ul li a:hover {
+			color: #ccc;
+		}
+
+		.search {
+			position: relative;
+		}
+
+		.search input {
+			padding: 10px;
+			border: none;
+			border-radius: 20px;
+			background-color: #444;
+			color: #fff;
+		}
+
+		.search button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 10px;
+			border: none;
+			border-radius: 20px;
+			background-color: #fff;
+			color: #444;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.container {
+			background-color: hsl(196.3,30.9%,74.2%);
+			padding: 40px 60px;
+			max-width: 1000px;
+			margin: auto;
+		}
+
+		h2 {
+			font-size: 28px;
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		.contact-wrapper {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 40px;
+			margin-top: 30px;
+		}
+
+		.contact-form h3,
+		.contact-info h3 {
+			font-size: 24px;
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		.contact-form .form-group {
+			margin-bottom: 20px;
+		}
+
+		.contact-form input,
+		.contact-form textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
+		.contact-form textarea {
+			height: 120px;
+			resize: none;
+		}
+
+		.contact-form button {
+			padding: 10px 20px;
+			border: none;
+			background-color: #4caf50;
+			color: #fff;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		.contact-form button:hover {
+			background-color: #45a049;
+		}
+
+		.contact-info p {
+			margin-bottom: 10px;
+			color: #555;
+		}
+
+		.contact-info i {
+			color: #4caf50;
+			margin-right: 10px;
+		}
+
+		@media screen and (max-width: 768px) {
+			.container {
+				padding: 20px;
+			}
+
+			.contact-wrapper {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="#">My Bookstore</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="new.html">Home</a></li>
+				<li><a href="about1.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact1.html">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<div class="search">
+			<input type="text" placeholder="Search...">
+			<button type="submit">Go</button>
+		</div>
+	</header>
+<br>
+<br>
+<br>
+	<section class="content">
+		<div class="container">
+			<h2>Contact Us</h2>
+			<div class="contact-wrapper">
+				<div class="contact-form">
+					<h3>Send us a message</h3>
+					<form>
+						<div class="form-group">
+							<input type="text" name="name" placeholder="Your Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" placeholder="Your Email" required>
+						</div>
+						<div class="form-group">
+							<textarea name="message" placeholder="Your Message" required></textarea>
+						</div>
+						<button type="submit">Send Message</button>
+					</form>
+				</div>
+				<div class="contact-info">
+					<h3>Contact Information</h3>
+					<p><i class="fas fa-phone"></i>+1 123 456 789</p>
+					<p><i class="fas fa-envelope"></i>info@example.com</p>
+					<p><i class="fas fa-map-marker-alt"></i>123 Nashik, Maharashtra</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
